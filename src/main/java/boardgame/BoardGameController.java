@@ -22,8 +22,8 @@ public class BoardGameController {
 
     @FXML
     private void initialize() {
-        for (int i = 0; i < board.getRowCount(); i++) {
-            for (int j = 0; j < board.getColumnCount(); j++) {
+        for (var i = 0; i < board.getRowCount(); i++) {
+            for (var j = 0; j < board.getColumnCount(); j++) {
                 var square = createSquare(i, j);
                 board.add(square, j, i);
             }

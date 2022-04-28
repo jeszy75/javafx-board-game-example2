@@ -10,8 +10,8 @@ public class BoardGameModel {
     private ReadOnlyObjectWrapper<Square>[][] board = new ReadOnlyObjectWrapper[BOARD_SIZE][BOARD_SIZE];
 
     public BoardGameModel() {
-        for (int i = 0; i < BOARD_SIZE; i++) {
-            for (int j = 0; j < BOARD_SIZE; j++) {
+        for (var i = 0; i < BOARD_SIZE; i++) {
+            for (var j = 0; j < BOARD_SIZE; j++) {
                 board[i][j] = new ReadOnlyObjectWrapper<Square>(Square.NONE);
             }
         }
@@ -37,8 +37,8 @@ public class BoardGameModel {
 
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < BOARD_SIZE; i++) {
-            for (int j = 0; j < BOARD_SIZE; j++) {
+        for (var i = 0; i < BOARD_SIZE; i++) {
+            for (var j = 0; j < BOARD_SIZE; j++) {
                 sb.append(board[i][j].get().ordinal()).append(' ');
             }
             sb.append('\n');
