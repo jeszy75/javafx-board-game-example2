@@ -5,7 +5,7 @@ import javafx.beans.property.ReadOnlyObjectWrapper;
 
 public class BoardGameModel {
 
-    public static int BOARD_SIZE = 5;
+    public static final int BOARD_SIZE = 5;
 
     private ReadOnlyObjectWrapper<Square>[][] board = new ReadOnlyObjectWrapper[BOARD_SIZE][BOARD_SIZE];
 
